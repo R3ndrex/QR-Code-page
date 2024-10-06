@@ -1,3 +1,8 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 @font-face {
     font-display: swap;
     font-family: "Roboto";
@@ -24,32 +29,34 @@ body {
     display: flex;
 }
 img {
+    width: 100%;
     flex: 1;
     border-radius: 1rem;
 }
 .box {
-    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: min(400px, 90%);
+    width: min(350px, 90%);
     padding: 1rem;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0px 29px 69px 0px rgba(0, 0, 0, 0.16);
 }
 h1 {
+    font-size: 1.6rem;
+    color: rgb(37, 37, 71);
+    text-wrap: balance;
     font-weight: 1000;
     margin: 1rem 0;
-    text-wrap: balance;
 }
 p {
-    margin: 0;
-    margin-bottom: 1rem;
+    margin: 0 0 2rem 0;
+    font-size: 1.3rem;
+    color: rgb(136, 136, 136);
     text-wrap: pretty;
-    color: silver;
 }
 .attribution {
     font-size: 11px;
